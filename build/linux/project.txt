@@ -1,0 +1,41 @@
+#请修改以下内容以确定相关内容
+
+#项目类型(可执行程序exe,静态库lib,动态库dll,so)
+export PROJECT_TYPE= exe
+
+#项目的版本号
+export PROJECT_VERSION= 1.0.0.0
+
+#源文件所在路径 （目录列表）
+PROJECT_SOURCE= ../../alarm  ../../common ../../httpmodule ../../main/daemon ../../public ../../ttsmodule ../../tinyxml ../../msgtransfer
+
+#头文件路径(-I目录)
+PROJECT_INCLUDE= -I../../alarm  -I../../common -I../../encodetrans -I../../httpmodule -I../../ttsapi/include -I../../ttsmodule -I../../log4cplus-1.1.3-rc2/include -I/opt/intp60/include -I../../main/daemon -I../../tinyxml -I../../msgtransfer
+
+#生成的版本文件名称
+PROJCT_VERSION_H= 
+
+#其他的链接路径，(-L目录)
+PROJECT_LINK_DIR=-L../../log4cplus-1.1.3-rc2/src/.libs
+
+#工程的宏定义
+PROJECT_DEF= -D_LINUX 
+# debug 工程的宏定义
+export PROJECT_DEF_DEBUG= -D_DEBUG -DDEBUG
+# release 工程的宏定义
+export PROJECT_DEF_RELEASE= -DNDEBUG
+
+#工程需要链接的其他动态库
+export PROJECT_IMPORT_DLL= -lpthread -ldl -llog4cplus
+
+# debug 工程需要链接的其他静态库文件列表
+export PROJECT_IMPORT_LIB_DEBUG=   
+
+# release 工程需要链接的其他静态库文件列表
+export PROJECT_IMPORT_LIB_RELEASE=    
+
+#项目编译输出路径
+export PROJECT_PATH = ../../work/bin
+#项目输出文件主名称(不带后缀）
+export PROJECT_BASENAME = tts
+

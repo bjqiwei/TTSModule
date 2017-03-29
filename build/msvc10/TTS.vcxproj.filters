@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{a159ee62-ebc6-4313-bb1b-8b8d6685c321}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1983fa81-8041-4c5f-9f27-f76907d3be9b}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="TTS">
+      <UniqueIdentifier>{b90c5b90-e2e8-4013-bfad-607efa8574a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{62393ed3-1e4e-4555-80ad-0a792015f554}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="httpmodule">
+      <UniqueIdentifier>{39b3a56c-018c-4e9d-b796-ee88d6b15cda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="alarm">
+      <UniqueIdentifier>{dcdd8c7c-30b4-4685-8b85-a7d74f1d7265}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tinyxml">
+      <UniqueIdentifier>{979356b2-b6db-4b61-8b22-403757dec744}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="msgtransfer">
+      <UniqueIdentifier>{b81029c9-fb2b-4fff-902e-abce7d1096af}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\ttsmodule\tts.cpp">
+      <Filter>TTS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\httpmodule\httpserver.cpp">
+      <Filter>httpmodule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\alarm\alarm.cpp">
+      <Filter>alarm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\httpmodule\mongoose.c">
+      <Filter>httpmodule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\httpmodule\http.cpp">
+      <Filter>httpmodule</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\tinyxml\tinyxml2.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ttsmodule\iFlyTTs.cpp">
+      <Filter>TTS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ttsmodule\ttscon_utils.cpp">
+      <Filter>TTS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\main\daemon\version.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\main\daemon\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\main\daemon\menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\main\daemon\config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\main\daemon\daemon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\msgtransfer\Request2TTS.cpp">
+      <Filter>msgtransfer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\msgtransfer\TTS2Request.cpp">
+      <Filter>msgtransfer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\ttsmodule\msgdefine.h">
+      <Filter>TTS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ttsmodule\tts.h">
+      <Filter>TTS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\httpmodule\httpserver.h">
+      <Filter>httpmodule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\alarm\alarm.h">
+      <Filter>alarm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\lock.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\Csemaphore.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\Timer.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\CEventBuffer.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\httpmodule\mongoose.h">
+      <Filter>httpmodule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\stringHelper.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\httpmodule\http.h">
+      <Filter>httpmodule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\encodetrans\encodetransfer.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\tinyxml\tinyxml2.h">
+      <Filter>tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ttsmodule\iFlyTTs.h">
+      <Filter>TTS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ttsmodule\ttscon_utils.h">
+      <Filter>TTS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\main\daemon\version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\main\daemon\daemon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\main\daemon\menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\main\daemon\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\msgtransfer\Request2TTS.h">
+      <Filter>msgtransfer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\msgtransfer\TTS2Request.h">
+      <Filter>msgtransfer</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

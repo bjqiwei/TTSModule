@@ -1,0 +1,49 @@
+	tts是科大讯飞InterPhonic 6.0系统
+
+一、安装系统
+
+	1.安装光盘内容
+
+	Runtime：放置运行库的安装程序。
+
+	Voclib：放置音库的安装程序。安装光盘中提供了多种发音人的音库安装程序，您可以根据需要选择安装其中的一个或多个音库。
+
+	安装好光盘后，会有 TTS  TTS1  TTS2  TTS3 共4个目录，本文档默认将其拷贝到/home/gongcx/目录下
+	#cd /home/gongcx
+	#ls
+	即有TTS  TTS1  TTS2  TTS3
+
+	2.安装运行库
+	#cd /home/gongcx/TTS
+	#sh installer
+	安装过程中会需要输入一些确认信息，根据向导提示信息输入yes或按enter回车即可
+
+	3.安装语音库
+	#cd /home/gongcx/TTS1
+	#sh installer_voclib
+	安装过程中会需要输入一些确认信息，
+	当提示需要输入音库相关文件盘符或Disk目录路径的时候，依次输入“home/gongcx/TTS1”、“home/gongcx/TTS2”、“home/gongcx/TTS3”
+	其余的根据向导提示信息输入yes或按enter回车即可
+
+	4.系统卸载
+	#cd /opt/intp60/
+	#sh uninstaller
+
+二、配置防火墙
+	需要在防火墙设置允许客户端访问，例如客服端ip为123.124.189.193
+	#vim /etc/sysconfig/iptables
+	-A RH-Firewall-1-INPUT -s 123.124.189.193 -j ACCEPT
+
+三、启动服务
+	启动
+	#/opt/intp60/bin/isp/ses -s
+
+	停止
+	#ps aux|grep ses
+	root     29923  3.5  6.4 1281984 531916 ?      Sl   Apr09 203:22 /opt/intp60/bin/isp/ses -s
+	#kill -9 29923	
+	
+四、文本编码设置
+	TTS解析的文本编码配置默认是由程序自动识别的，但有时会识别错误，需要修改配置文件制定文本编码类型；
+	etc/misc/res_custom_intp.cfu 文件中的CodePage项，修改为你需要的编码类型；
+	CodePage=0000000 -> CodePage=0000006
